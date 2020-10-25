@@ -1,0 +1,10 @@
+(executable
+ (name inverse)
+ (modules inverse))
+
+(executable
+ (name par_inverse)
+ (modules par_inverse)
+ (libraries domainslib))
+
+ (alias (name inversion) (deps inverse.exe par_inverse.exe))
